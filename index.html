@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pour toi ></title>
+   <script src="https://kit.fontawesome.com/a8e59d0a68.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="anne.css">
+</head>
+<body>
+
+     <div class="container" id="etape1">
+        <div class="coeur"><i class="fa-solid fa-heart" style="color: rgb(252, 116, 116);"></i></div>
+        <h1>Salut toi!</h1>
+        <p>j'ai quelque chose à te dire... <br>Tu es prete ? </p>
+        <button onclick="repondre('oui bien sur',2)">oui bien sur</button>
+     </div>
+     <div class="container" id="etape2" style="display: none;">
+        <h1>question 1 </h1>
+        <p>Est-ce que tu pense a moi?</p>
+        <button onclick="repondre('Tout le temp',3)">Tout le temps</button>
+        <button onclick="repondre('un peu',3)">un peu</button>
+     </div>
+
+     <div class="container" id="etape3" style="display: none;">
+        <h1>question 2</h1>
+        <p>Clique sur le bouton qui bat le plus fort!</p>
+        <button onclick="repondre('💖​',4)">💖​</button>
+        <button onclick="repondre('💞​',4)">💞​</button>
+        <button onclick="repondre('❤️​​',4)">❤️​​</button>
+     </div>
+
+     <div class="container-message" id="etape4" style="display: none;">
+        <div class="coeur">💖</div>
+        <h1>Mon message pour toi</h1>
+        <p class="message-amour">
+            Toi, tu es ma plus belle recontre.  <br><br>Chaque jour avec toi est un cadeau. <br> je t'aime énormement ❤️​❤️​❤️​❤️​❤️​
+        </p>
+        <button><a href="Untitled-1.html">regarde ça</a></button>
+        <button onclick="envoyerWhatsApp()">envoyer ses réponses sur WhatsApp </button>
+        <button onclick="relancer()">recommencer</button>
+     </div>
+     <canvas class="confettis" id="confettis"></canvas>
+     <script src="script.js"></script> 
+</body>
+</html>
